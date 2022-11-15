@@ -2,23 +2,32 @@
 <html>
 
 <head>
+    <meta name="viewport"  content="width=device-width" initial-scale="1.0">
     <title>
         CSS
     </title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #B8B8B8;
         }
 
         header{
-            padding-top: 5px;
+            /* padding: 16px 0; */
+            line-height: 50px;
             width: 100%;
             vertical-align: middle;
             text-align: center;
             height: 50px;
             background-color: #E0E0E0;
         }
-
+        header>div{
+            vertical-align: middle;
+            height: 100%;
+        }
         section ul li {
             list-style-type: none;
             display: inline;
@@ -32,12 +41,49 @@
             height: 50px;
             background-color: #E0E0E0;
         }
+
+        #feature{
+            padding-top: 5px;
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+            height: 200px;
+            background-color: #E0E0E0;
+        }
+
+        article{   
+            margin: 5px; 
+            width: 32.33%;
+            display:inline-flex;
+            vertical-align: middle;
+            height: 200px;
+            background-color: #E0E0E0;
+        }
+
+        footer{
+            padding-top: 5px;
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+            height: 50px;
+            background-color: #E0E0E0;
+            line-height: 50px;
+        }
+
+        @media only screen and (max-width: 200px) {
+            article {
+                width: 50%;
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-       Logo
+        <div>
+            Logo
+        </div>
     </header>
     <br>
     <section>
@@ -60,15 +106,16 @@
     </section>
     <br>
     <main>
-        <section class="feature">
+        <section id="feature">
             Feature
         </section>
-        <section>
+        <section class="article">
             <article>Column 1</article>
             <article>Column 2</article>
             <article>Column 3</article>
         </section>
     </main>
+    <br>
     <footer>
         &copy;Copyright 2022
     </footer>
