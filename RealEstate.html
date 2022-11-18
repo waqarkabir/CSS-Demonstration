@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport"  content="width=device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
     <title>
         CSS
     </title>
@@ -11,44 +11,66 @@
             box-sizing: border-box;
         }
 
-        header{
+        header {
             /* padding: 16px 0; */
             line-height: 50px;
             width: 1520px;
             vertical-align: middle;
             text-align: center;
             height: 70px;
-            background-color:#05526A;
+            background-color: #05526A;
         }
-        
 
-        article>section{   
+        .asideItem {
             border-radius: 5px;
-            margin: 25px; 
-            width: 380px;
-            display:inline-flex;
+            margin: 25px;
+            width: 80px;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 20px;
+            background-color: #E0E0E0;
+        }
+
+
+        .mainTopSection {
+            border-radius: 5px;
+            margin: 25px;
+            width: 300px;
+            display: inline-flex;
             vertical-align: middle;
             height: 220px;
             background-color: #E0E0E0;
         }
 
-        section>article{   
+
+        section>article {
             border-radius: 5px;
-            margin: 25px; 
+            margin: 25px;
             width: 380px;
-            display:inline-flex;
+            display: inline-flex;
             vertical-align: middle;
-            height: 200px;
+            height: 150px;
             background-color: #CED4D6;
         }
 
-        section>div{
+        section>div {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
+            width: 380px;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 40px;
+            background-color: #CED4D6;
+        }
+
+        article>div {
             background-color: #05526A;
             height: 5px;
             width: 1250px;
             margin: 15px 25px 15px 25px;
         }
-        .leftSpace{
+
+        .leftSpace {
             margin-left: 7%;
         }
     </style>
@@ -56,26 +78,44 @@
 
 <body>
     <header>
-            
+
     </header>
     <main>
-        <article class="leftSpace">
-            <section>Section 1</section>
-            <section>Section 2</section>
-            <section>Section 3</section>
-        </article>
-
         <section class="leftSpace">
+            <article>
+                <div class="asideItem"></div>
+                <div class="asideItem"></div>
+                <div class="asideItem"></div>
+                <div class="asideItem"></div>
+            </article>
+            <article class="mainTopSection"></article>
+            <article class="mainTopSection"></article>
+        </section>
+
+        <article class="leftSpace">
             <div>
 
             </div>
-        </section>
-        
-        <section class="leftSpace">
-            <article>Column 1</article>
-            <article>Column 2</article>
-            <article>Column 3</article>
-        </section>
+        </article>
+        <footer>
+            <section class="leftSpace">
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+
+            <section class="leftSpace">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+            <section class="leftSpace">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </footer>
     </main>
 </body>
 
