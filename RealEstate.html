@@ -20,32 +20,73 @@
             height: 70px;
             background-color: #05526A;
         }
-
+        
         .asideItem {
             border-radius: 5px;
-            margin: 25px;
-            width: 80px;
-            display: inline-flex;
-            vertical-align: middle;
-            height: 20px;
+            height: 30px;
+            text-align: justify;
+            align-items: center;
+            margin: auto;
+            width: 500px;
+            display: block;
             background-color: #E0E0E0;
         }
 
+        /* hr*/
+        .separator {
+            background-color: #05526A;
+            height: 5px;
+            width: 1250px;
+            margin: 2% 15% 2% 8%
+        }
 
-        .mainTopSection {
+        .leftSpace {
+            margin-left: 7%;
+        }
+
+        .firstMainRowFirstColumn {
             border-radius: 5px;
-            margin: 25px;
+            margin: 5px 25px 5px 25px;
+            width: 540px;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 300px;
+            background-color: #CED4D6;
+        }
+
+        .firstMainRow {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
             width: 300px;
             display: inline-flex;
             vertical-align: middle;
-            height: 220px;
-            background-color: #E0E0E0;
+            height: 300px;
+            background-color: #CED4D6;
         }
 
-
-        section>article {
+        .squareFirstInputField {
             border-radius: 5px;
-            margin: 25px;
+            height: 30px;
+            text-align: justify;
+            align-items: center;
+            padding-top: 5px;
+            margin: 10px;
+            width: 200px;
+            display: block;
+            background-color: white;
+        }
+
+        .squareSecondInputField {
+            border-radius: 5px;
+            margin: 30px;
+            width: 30%;
+            height: 30px;
+            background-color: white;
+        }
+
+        .secondMainRow {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
             width: 380px;
             display: inline-flex;
             vertical-align: middle;
@@ -53,7 +94,7 @@
             background-color: #CED4D6;
         }
 
-        section>div {
+        .thirdMainRow {
             border-radius: 5px;
             margin: 5px 25px 5px 25px;
             width: 380px;
@@ -63,60 +104,64 @@
             background-color: #CED4D6;
         }
 
-        article>div {
-            background-color: #05526A;
-            height: 5px;
-            width: 1250px;
-            margin: 15px 25px 15px 25px;
+        .forthMainRow {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
+            width: 380px;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 40px;
+            background-color: #CED4D6;
         }
 
-        .leftSpace {
-            margin-left: 7%;
-        }
+
     </style>
 </head>
 
 <body>
     <header>
-
+        <div class="squareFirstInputField"></div>
+        <!-- <div class="squareFirstInputField"></div>
+        <div class="squareFirstInputField"></div>
+        <div class="squareFirstInputField"></div>
+        <div class="squareFirstInputField"></div>
+        <div class="squareFirstInputField"></div> -->
     </header>
-    <main>
-        <section class="leftSpace">
-            <article>
-                <div class="asideItem"></div>
-                <div class="asideItem"></div>
-                <div class="asideItem"></div>
-                <div class="asideItem"></div>
-            </article>
-            <article class="mainTopSection"></article>
-            <article class="mainTopSection"></article>
-        </section>
 
-        <article class="leftSpace">
-            <div>
+    <section class="leftSpace">
+        <div class="firstMainRowFirstColumn">
+            <div class="squareFirstInputField"></div>
+            <div class="squareFirstInputField"></div>
+            <div class="squareFirstInputField"></div>
+            <div class="squareFirstInputField"></div>   
+        </div>
+        <div class="firstMainRow"></div>
+        <div class="firstMainRow">
+           <div class="squareFirstInputField"></div>
+           <div class="squareFirstInputField"></div>
+           <div class="squareFirstInputField"></div>
+        </div>
+    </section>
 
-            </div>
-        </article>
-        <footer>
-            <section class="leftSpace">
-                <article></article>
-                <article></article>
-                <article></article>
-            </section>
+    <div class="separator">
 
-            <section class="leftSpace">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
+    </div>
+    <section class="leftSpace">
+        <div class="secondMainRow"></div>
+        <div class="secondMainRow"></div>
+        <div class="secondMainRow"></div>
+    </section>
 
-            <section class="leftSpace">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </footer>
-    </main>
+    <section class=" leftSpace">
+        <div class="thirdMainRow"></div>
+        <div class="thirdMainRow"></div>
+        <div class="thirdMainRow"></div>
+    </section>
+
+    <section class="leftSpace">
+        <div class="forthMainRow"></div>
+        <div class="forthMainRow"></div>
+        <div class="forthMainRow"></div>
+    </section>
 </body>
-
 </html>
