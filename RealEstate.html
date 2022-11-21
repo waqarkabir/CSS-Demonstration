@@ -14,7 +14,7 @@
         header {
             /* padding: 16px 0; */
             line-height: 50px;
-            width: 1520px;
+            width: 100%;
             vertical-align: middle;
             text-align: center;
             height: 80px;
@@ -27,7 +27,7 @@
             text-align: justify;
             align-items: center;
             margin: auto;
-            width: 500px;
+            width: 100%;
             display: block;
             background-color: #E0E0E0;
         }
@@ -47,8 +47,8 @@
         .separator {
             background-color: #05526A;
             height: 5px;
-            width: 1250px;
-            margin: 2% 15% 2% 8%
+            width: 100;
+            margin: 2%;
         }
 
         .leftSpace {
@@ -58,68 +58,33 @@
         .firstMainRowFirstColumn {
             border-radius: 5px;
             margin: 5px 25px 5px 25px;
-            width: 540px;
+            width: 70%;
             float: left;
             vertical-align: middle;
-            height: 300px;
+            height: 200px;
             background-color: transparent;
         }
 
         .firstMainRow {
             border-radius: 5px;
             margin: 5px 25px 5px 25px;
-            width: 300px;
+            width: 35%;;
             display: inline-flex;
             vertical-align: middle;
-            height: 300px;
+            height: 180px;
             background-color: #CED4D6;
-        }
-
-        .squareFirstInputField {
-            border-radius: 5px;
-            flex-wrap: wrap;
-            height: 30px;
-            width: 80%;
-            background-color: red;
-        }
-
-        .squareSecondInputField {
-            border-radius: 5px;
-            margin: 60px;
-            width: 200px;
-            height: 30px;
-            background-color: white;
         }
 
         .secondMainRow {
             border-radius: 5px;
             margin: 5px 25px 5px 25px;
-            width: 380px;
+            width: 25%;
             display: inline-flex;
             vertical-align: middle;
-            height: 150px;
+            height: 120px;
             background-color: #CED4D6;
         }
 
-        .thirdMainRow {
-            border-radius: 5px;
-            margin: 5px 25px 5px 25px;
-            width: 380px;
-            display: inline-flex;
-            vertical-align: middle;
-            height: 40px;
-            background-color: #CED4D6;
-        }
-
-        .forthMainRow {
-            border-radius: 5px;
-            margin: 5px 25px 5px 25px;
-            width: 380px;
-            display: inline-flex;
-            vertical-align: middle;
-            height: 40px;
-            background-color: #CED4D6;
-        }
         .btnswsh{
             padding: 15px;
             margin: 15px;
@@ -137,12 +102,38 @@
         }
 
         .btnmwmh{
-            margin: 15px 15px 15px 75px;
+	    margin:15px;;
             border-radius: 5px;
             height: 40px;
             width: 150px;
             background-color: #576a70;
         }
+    .thirdMainRow {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
+            width: 25%;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 40px;
+            background-color: #CED4D6;
+        }
+
+        .forthMainRow {
+            border-radius: 5px;
+            margin: 5px 25px 5px 25px;
+            width: 25%;
+            display: inline-flex;
+            vertical-align: middle;
+            height: 40px;
+            background-color: #CED4D6;
+        }
+
+	.flex{
+	display:flex;
+	flex-direction:row;
+	width:81%;
+	}
+
     </style>
 </head>
 
@@ -159,7 +150,7 @@
 
     </header>
 
-    <div class="leftSpace">
+    <div class="leftSpace flex">
         <div class="firstMainRowFirstColumn">
             <div class="asideItem"></div>
             <br>
@@ -167,13 +158,17 @@
             <br>
             <div class="asideItem"></div>
             <br>
-            <button style="float: left;" class="btnmwmh"></button>
-            <button style="float: left;" class="btnmwmh"></button>
+	     <div class="flex">
+    		<button style="float: left;" class="btnmwmh"></button>
+            	<button style="float: right;" class="btnmwmh"></button>
+	     </div>
         </div>
         <div class="firstMainRow">
         </div>
-        <div class="firstMainRow">
-            
+        <div style="flex-direction:column" class="firstMainRow">
+            <button style="float: left;" class="btnmwmh"></button>
+            	<button style="float: right;" class="btnmwmh"></button>
+            	<button style="float: right;" class="btnmwmh"></button>
         </div>
     </div>
     </div>
@@ -194,9 +189,9 @@
     </section>
 
     <section class="leftSpace">
-        <div class="forthMainRow"></div>
-        <div class="forthMainRow"></div>
-        <div class="forthMainRow"></div>
+        <div style="background-color:#e0e0e0" class="forthMainRow"></div>
+        <div style="background-color:#e0e0e0" class="forthMainRow"></div>
+        <div style="background-color:#e0e0e0" class="forthMainRow"></div>
     </section>
 </body>
 
